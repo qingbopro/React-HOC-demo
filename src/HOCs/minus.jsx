@@ -21,7 +21,7 @@ export default WrappedComponent => {
     render() {
       return (
         <WrappedComponent
-          count={this.state.count}
+          {...this.state}
           onAdd={this.add}
           onMinus={this.minus}
           {...this.props}

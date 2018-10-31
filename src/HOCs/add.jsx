@@ -15,7 +15,7 @@ export default defaultCount => WrappedComponent => {
     }
 
     render() {
-      return <WrappedComponent count={this.state.count} onAdd={this.add} {...this.props}/>
+      return <WrappedComponent {...this.state} onAdd={this.add} {...this.props}/>
     }
   }
 }
