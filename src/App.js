@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import HocAdd from './HOCs/add';
-import Count from './components/add';
-import './App.css';
+import React, { Component } from 'react'
+import Hoc from './HOCs/minus'
+import Count from './components/count'
+import './App.css'
 
-const HocAddComponent = HocAdd(Count);
+const HocAddComponent = Hoc(Count)
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HocAddComponent count={2} />
+        <HocAddComponent />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
